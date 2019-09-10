@@ -23,7 +23,6 @@ class _SliderPianoState extends State<SliderPiano> {
               child: Stack(
                 children: <Widget>[
                   Row(
-                    // mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
                       CartaReusable(

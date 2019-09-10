@@ -56,13 +56,6 @@ class SeccionBlanca extends StatelessWidget {
               ),
             ],
           ),
-          // TeclaNegra(
-          //   ejex: -2.0,
-          //   ejey: 0,
-          //   presionado: () {
-          //     print('holo1');
-          //   },
-          // ),
           Positioned(
             right: MediaQuery.of(context).size.width / 1.225,
             child: TeclaNegra(

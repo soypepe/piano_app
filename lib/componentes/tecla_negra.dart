@@ -1,49 +1,6 @@
 import 'package:flutter/material.dart';
 import 'sonido.dart';
 
-// class TeclaNegra extends StatelessWidget {
-//   final int nota;
-//   final String notaTono;
-
-//   TeclaNegra({@required this.nota, this.notaTono});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       margin: EdgeInsets.only(top: 1.8),
-//       height: 190,
-//       width: 50,
-//       child: Material(
-//         shape: RoundedRectangleBorder(
-//           borderRadius: BorderRadius.only(
-//             topLeft: Radius.zero,
-//             topRight: Radius.zero,
-//             bottomLeft: Radius.circular(8.0),
-//             bottomRight: Radius.circular(8.0),
-//           ),
-//         ),
-//         elevation: 2,
-//         color: Colors.black,
-//         child: GestureDetector(
-//           onTapDown: (TapDownDetails tapdowndetails) {
-//             pianoSonido(nota, notaTono);
-//           },
-//           child: InkWell(
-//             borderRadius: BorderRadius.only(
-//               topLeft: Radius.zero,
-//               topRight: Radius.zero,
-//               bottomLeft: Radius.circular(8.0),
-//               bottomRight: Radius.circular(8.0),
-//             ),
-//             highlightColor: Colors.white,
-//             splashColor: Colors.transparent,
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
 class TeclaNegra extends StatefulWidget {
   final int nota;
   final String notaTono;

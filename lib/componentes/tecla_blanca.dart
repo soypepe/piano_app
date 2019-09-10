@@ -1,55 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:audioplayers/audio_cache.dart';
 import 'sonido.dart';
-
-// class TeclaBlanca extends StatelessWidget {
-//   final Color color;
-//   final int nota;
-//   TeclaBlanca({this.color, this.nota});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Expanded(
-//       // child: FlatButton(
-//       //     splashColor: Colors.yellow,
-//       //     color: color,
-//       //     onPressed: () {
-//       //       pianoSonido(nota);
-//       //     }),
-//       child: GestureDetector(
-//         onTapDown: (TapDownDetails tapDownDetails) {
-//           pianoSonido(nota, 's');
-//         },
-//         child: Container(
-//           margin: EdgeInsets.all(2.0),
-//           decoration: BoxDecoration(
-//             color: color,
-//             borderRadius: BorderRadius.circular(4.0),
-//           ),
-//         ),
-//       ),
-//       // child: FlatButton(
-//       //   // padding: EdgeInsets.all(17.0),
-//       //   shape: RoundedRectangleBorder(
-//       //     borderRadius: BorderRadius.circular(8.0),
-//       //   ),
-//       //   highlightColor: Colors.black,
-//       //   splashColor: Colors.transparent,
-//       //   color: color,
-//       //   onPressed: () {
-//       //     pianoSonido(nota, 's');
-//       //   },
-//       // ),
-//     );
-//   }
-
-//   // void pianoSonido(int nota, String tono) {
-//   //   // print('nota: $nota');
-//   //   final player = AudioCache();
-//   //   // player.play('note$nota$tono.mp3');
-//   //   player.play('note$nota$tono.wav');
-//   // }
-// }
 
 class TeclaBlanca extends StatefulWidget {
   final int nota;

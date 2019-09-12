@@ -57,7 +57,7 @@ class SeccionBlanca extends StatelessWidget {
             ],
           ),
           Positioned(
-            right: MediaQuery.of(context).size.width / 1.225,
+            right: MediaQuery.of(context).size.width / 1.22,
             child: TeclaNegra(
               nota: 2,
               notaTono: notaTono,
@@ -65,7 +65,7 @@ class SeccionBlanca extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: MediaQuery.of(context).size.width / 1.49,
+            right: MediaQuery.of(context).size.width / 1.48,
             child: TeclaNegra(
               nota: 4,
               notaTono: notaTono,
@@ -73,7 +73,7 @@ class SeccionBlanca extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: MediaQuery.of(context).size.width / 2.60,
+            right: MediaQuery.of(context).size.width / 2.56,
             child: TeclaNegra(
               nota: 7,
               notaTono: notaTono,
@@ -81,7 +81,7 @@ class SeccionBlanca extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: MediaQuery.of(context).size.width / 4.12,
+            right: MediaQuery.of(context).size.width / 4.06,
             child: TeclaNegra(
               nota: 9,
               notaTono: notaTono,
@@ -89,7 +89,7 @@ class SeccionBlanca extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: MediaQuery.of(context).size.height / 6.06,
+            right: MediaQuery.of(context).size.width / 9.50,
             child: TeclaNegra(
               nota: 11,
               notaTono: notaTono,

@@ -18,28 +18,31 @@ class _TeclaNegraState extends State<TeclaNegra> {
   double _blurRadio = 0.0;
 
   void quitSombra() {
-    _spreadRadio = 0.0;
-    _blurRadio = 0.0;
+    setState(() {
+      _spreadRadio = 0.0;
+      _blurRadio = 0.0;
+    });
   }
 
   void setSombra() {
-    _spreadRadio = -2.0;
-    _blurRadio = 4.0;
+    setState(() {
+      _spreadRadio = -2.0;
+      _blurRadio = 4.0;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTapDown: (TapDownDetails detalles) {
+        setSombra();
         pianoSonido(widget.nota, widget.notaTono);
-        setState(() {
-          setSombra();
-        });
       },
       onTapUp: (TapUpDetails detalles) {
-        setState(() {
-          quitSombra();
-        });
+        quitSombra();
+      },
+      onTapCancel: () {
+        quitSombra();
       },
       child: Container(
         height: 190,

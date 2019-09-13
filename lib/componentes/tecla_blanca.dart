@@ -17,13 +17,17 @@ class _TeclaBlancaState extends State<TeclaBlanca> {
   double _blurRadio = 0.0;
 
   void quitSombra() {
-    _spreadRadio = 0.0;
-    _blurRadio = 0.0;
+    setState(() {
+      _spreadRadio = 0.0;
+      _blurRadio = 0.0;
+    });
   }
 
   void setSombra() {
-    _spreadRadio = -6.0;
-    _blurRadio = 6.0;
+    setState(() {
+      _spreadRadio = -6.0;
+      _blurRadio = 6.0;
+    });
   }
 
   @override
@@ -31,15 +35,14 @@ class _TeclaBlancaState extends State<TeclaBlanca> {
     return Expanded(
       child: GestureDetector(
         onTapDown: (TapDownDetails tapDownDetails) {
+          setSombra();
           pianoSonido(widget.nota, widget.notaTono);
-          setState(() {
-            setSombra();
-          });
         },
         onTapUp: (TapUpDetails tapUpDetails) {
-          setState(() {
-            quitSombra();
-          });
+          quitSombra();
+        },
+        onTapCancel: () {
+          quitSombra();
         },
         child: Container(
           margin: EdgeInsets.all(2.0),

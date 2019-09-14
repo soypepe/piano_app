@@ -4,6 +4,7 @@ import 'componentes/slider.dart';
 
 void main() {
   setOrientacion();
+  hideStatusBar();
   runApp(Piano());
 }
 
@@ -23,5 +24,9 @@ class Piano extends StatelessWidget {
 
 setOrientacion() async {
   await SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft]);
+      [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeLeft]);
+}
+
+hideStatusBar() async {
+  await SystemChrome.setEnabledSystemUIOverlays([]);
 }

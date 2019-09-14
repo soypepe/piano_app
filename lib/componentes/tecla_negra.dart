@@ -45,7 +45,7 @@ class _TeclaNegraState extends State<TeclaNegra> {
         quitSombra();
       },
       child: Container(
-        height: 190,
+        height: 210,
         width: 50,
         margin: EdgeInsets.all(1.5),
         decoration: BoxDecoration(

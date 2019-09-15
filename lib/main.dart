@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 import 'componentes/slider.dart';
 
 void main() {
-  setOrientacion();
   hideStatusBar();
   runApp(Principal());
 }
@@ -70,6 +69,12 @@ class _PianoState extends State<Piano> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    setOrientacion();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: _atrasPresionado,
@@ -85,7 +90,7 @@ class _PianoState extends State<Piano> {
 
 setOrientacion() async {
   await SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeLeft]);
+      [DeviceOrientation.landscapeRight, DeviceOrientation.landscapeLeft]);
 }
 
 hideStatusBar() async {
